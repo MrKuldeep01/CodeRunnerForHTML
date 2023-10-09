@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Document</title>
-     <link rel="stylesheet" href="style.css ">    
-     <script src="https://kit.fontawesome.com/5a2806fb6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css ">
+    <script src="https://kit.fontawesome.com/5a2806fb6d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!-- <header>
-        <img class="left" id="logo" src="Himt logo.png">
-        <h1 id="mainh" class="right">CODE RUNNER </h1>
-        <h3 class="right">Run your HTML, CSS, javaScript code here</h3>
-        </header> -->
+
     <div class="container">
         <div class="left">
-            <label ><i class="fa-sharp fa-solid fa-code"></i>HTML</label>
-            <textarea id="htmlcode"  onkeyup="run()"></textarea>
+            <label><i class="fa-sharp fa-solid fa-code"></i>HTML</label>
+            <textarea id="htmlcode" spellcheck="false" onkeyup="run()"></textarea>
 
-            <label ><i class="fa-brands fa-css3-alt"></i>CSS</label>
-            <textarea id="csscode" onkeyup="run()"></textarea>
-            
-            <label ><i class="fa-brands fa-js"></i>JavaScript</label>
-            <textarea id="jscode" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id="csscode" onkeyup="run()" spellcheck="false"></textarea>
+
+            <label><i class="fa-brands fa-js"></i>JavaScript</label>
+            <textarea id="jscode" spellcheck="false" onkeyup="run()"></textarea>
         </div>
         <div class="right">
-            <label ><i class="fa-solid fa-play"></i>Output</label>
+            <label><i class="fa-solid fa-play"></i>Output</label>
             <iframe id="output"></iframe>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
