@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="front.css">
-    <title>Home page</title>
-</head>
-<body>
-    <div class="whole">
-        <div class="content slide0">
-            <img src="img/img1.png" id="img1">
-            <h3>Think great and add efforts</h3>
-            <a class="link" href="#slide4">click here to coding ⬇</a>
-        </div>
-        <div class="content slide1">
-            <img src="img/img2.png" id="img2">
-            <h3>Try something new every TODAY !</h3>
-        </div>
-        <div class="content slide2">
-            <img src="img/img3.png" id="img3">
-            <h3>DECODE the actual life </h3>
-        </div>
-        <div class="content slide3">
-            <img src="img/img4.jfif" id="img4">
-            <h3>Build your logical thinking....</h3>
-        </div>
-        <div id="slide4" class="content slide4">
-            <img src="img/img5.webp" id="simg5">
-            <h3>Start code BUDDY 🥰</h3>
-            <a class="link" href="coderunner.html">Write & Run Html, css, js code</a>
-        </div>
-    </div>
-    <footer id="me">
-        <span class="insta"><a target="_blank" href="https://instagram.com/kharoliya_01" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
-        <span class="github"><a target="_blank" href="https://github.com/MrKuldeep01" target="_blank"><i class="fa-brands fa-github"></i></a></span>
-        <p>Mr. Kumar</p>
-        <span class="email"><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope"></i></a></span>
-        <span class="whatsapp"><a target="_blank" href="https://wa.me/919728541543" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></span>
-    </footer>
-    <div id="bgimg"></div>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Here</title>
+    <link rel="stylesheet" href="style.css " />
+    <link rel="web icon" href="/img/web icon.PNG">
     <script
       src="https://kit.fontawesome.com/5a2806fb6d.js"
       crossorigin="anonymous"
     ></script>
-</body>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="left">
+        <label><i class="fa-sharp fa-solid fa-code"></i>HTML</label>
+        <textarea id="htmlcode" spellcheck="false" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+        <textarea id="csscode" onkeyup="run()" spellcheck="false"></textarea>
+
+        <label><i class="fa-brands fa-js"></i>JavaScript</label>
+        <textarea id="jscode" spellcheck="false" onkeyup="run()"></textarea>
+      </div>
+      <div class="right">
+        <label
+          ><span><i class="fa-solid fa-play"></i>Output</span
+          ><span
+            ><a href="#outputBox" class="outRight"
+              >Open with full page<i class="fa-solid fa-play"></i></a></span
+        ></label>
+        <iframe id="output"></iframe>
+      </div>
+      <div id="outputBox">
+        <label
+          ><a href="#container"
+            ><i class="fa-solid fa-play"></i>Back to code</a
+          ></label
+        >
+        <iframe id="outputpage"></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
