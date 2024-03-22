@@ -1,4 +1,4 @@
-let code = ``;
+
 function run(){
     let htmlCode = document.getElementById("htmlcode").value;
     let cssCode = document.getElementById("csscode").value;
